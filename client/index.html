@@ -19,7 +19,7 @@
   <body>
     <h1 class="display-1 text-center m-5">CRUD app</h1>
     <div class="container bg-white p-4 bord rounded-4">
-      <form name="myform" class="mb-5" onsubmit=addProduct(event)>
+      <form name="myform" class="mb-5" onsubmit="addProduct(event)">
         <div class="mb-3">
           <label class="form-label">Name</label>
           <input type="text" name="prodectName" class="form-control" />
@@ -32,10 +32,11 @@
           <label class="form-label">Description</label>
           <input type="text" name="prodectDesc" class="form-control" />
         </div>
-        <button type="submit" class="btn btn-primary">add</button>
+        <button type="submit" name="add" class="btn btn-primary d-none">add</button>
+        <button type="submit" name="update" class="btn btn-success">update</button>
       </form>
       <div class="table">
-        <table class="table ">
+        <table class="table">
           <thead>
             <tr>
               <th>Name</th>
@@ -44,8 +45,7 @@
               <th>Actions</th>
             </tr>
           </thead>
-          <tbody id="table">
-          </tbody>
+          <tbody id="table"></tbody>
         </table>
       </div>
     </div>

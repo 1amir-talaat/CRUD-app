@@ -43,9 +43,9 @@ app.post("/addproduct", (req, res) => {
 app.delete('/deletprodect/:id', (req, res) => {
   const id = req.params.id
 
-  let query = "DELETE FROM `Products` WHERE `id` = " + id
+  let query = "DELETE FROM `Products` WHERE `id` = ?"
 
-  db.query(query, (err, data) => {
+  db.query(query, [id], (err, data) => {
     if (err) {
       res.status(400).send("error")
 
@@ -56,6 +56,21 @@ app.delete('/deletprodect/:id', (req, res) => {
     }
   })
 })
+
+app.put('/updateproduct/:id', (req, res) => {
+  const id = req.params.id;
+  const { name, price, description } = req.body;
+  const query = "UPDATE `Products` SET `name`=?, `price`=?, `description`=? WHERE `id` = ?";
+
+  db.query(query, [name, price, description, id], (err, data) => {
+    if (err) {
+      res.status(400).send("error");
+      console.log(err);
+    } else {
+      res.status(200).send("updated");
+    }
+  });
+});
 
 app.listen(3000, () => {
   console.log("server start at port 3000");

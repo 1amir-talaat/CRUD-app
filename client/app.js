@@ -1,4 +1,4 @@
-const updatePodect = (products) => {
+const updatePodectsList = (products) => {
   const table = document.getElementById("table")
   let productsList = ''
   products.forEach(product => {
@@ -7,7 +7,8 @@ const updatePodect = (products) => {
         <td>${product.price}</td>
         <td>${product.description}</td>
         <td>
-        <button class="btn btn-danger" onclick=deletePodect(${product.id})>Delete</button>
+        <button class="btn btn-danger me-3" onclick=deletePodect(${product.id})>Delete</button>
+        <button class="btn btn-success" onclick=editPodect(${product.id})>update</button>
         </td></tr>`
   });
 
@@ -20,7 +21,7 @@ const getProdects = async () => {
       (res) => res.json()
     )
     .then(
-      (data) => updatePodect(data)
+      (data) => updatePodectsList(data)
     )
 }
 
@@ -59,6 +60,10 @@ const deletePodect = async (id) => {
 
   getProdects()
 
+}
+
+const updatePodect = (id) => {
+  
 }
 
 getProdects()
