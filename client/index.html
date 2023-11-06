@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+    <title>CRUD</title>
+  </head>
+  <body>
+    <h1 class="display-1 text-center m-5">CRUD app</h1>
+    <div class="container bg-white p-4 bord rounded-4">
+      <form name="myform" class="mb-5" onsubmit=addProduct(event)>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" name="prodectName" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input type="number" name="prodectPrice" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <input type="text" name="prodectDesc" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">add</button>
+      </form>
+      <div class="table">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="table">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="assets/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
