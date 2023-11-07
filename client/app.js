@@ -79,15 +79,6 @@ const editProduct = (id) => {
   updateButton.style.display = "block";
   addButton.style.display = "none";
 
-  let product = prodects.filter((prodect) => {
-    return prodect.id == id;
-  })[0];
-
-
-  document.querySelector("#prodectName").value = product.name;
-  document.querySelector("#prodectPrice").value = product.price;
-  document.querySelector("#prodectDesc").value = product.description;
-
   currntProdect = id
 
 }
