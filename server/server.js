@@ -13,6 +13,12 @@ const db = createConnection({
   database: 'test'
 })
 
+db.connect((err) => {
+  if (err) throw err;
+  console.log('Connected to MySQL database');
+});
+
+
 app.get('/products', (req, res) => {
   let query = "SELECT * FROM `Products`"
   db.query(query, (err, data) => {

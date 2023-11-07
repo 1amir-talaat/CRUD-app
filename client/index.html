@@ -17,23 +17,23 @@
     <title>CRUD</title>
   </head>
   <body>
-    <h1 class="display-1 text-center m-5">CRUD app</h1>
+    <h1 class="display-3 text-center m-4">CRUD app</h1>
     <div class="container bg-white p-4 bord rounded-4">
-      <form name="myform" class="mb-5" onsubmit="addProduct(event)">
+      <form action="" name="myform" class="mb-5">
         <div class="mb-3">
           <label class="form-label">Name</label>
-          <input type="text" name="prodectName" class="form-control" />
+          <input type="text" name="prodectName" id="prodectName" class="form-control" />
         </div>
         <div class="mb-3">
           <label class="form-label">Price</label>
-          <input type="number" name="prodectPrice" class="form-control" />
+          <input type="number" name="prodectPrice" id="prodectPrice" class="form-control" />
         </div>
         <div class="mb-3">
           <label class="form-label">Description</label>
-          <input type="text" name="prodectDesc" class="form-control" />
+          <input type="text" name="prodectDesc" id="prodectDesc" class="form-control" />
         </div>
-        <button type="submit" name="add" class="btn btn-primary d-none">add</button>
-        <button type="submit" name="update" class="btn btn-success">update</button>
+        <button type="button" id="add" class="btn btn-primary">add</button>
+        <button type="button" id="update" class="btn btn-success ">update</button>
       </form>
       <div class="table">
         <table class="table">
