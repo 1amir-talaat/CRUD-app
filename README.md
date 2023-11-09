@@ -2,17 +2,6 @@
 
 This is a simple CRUD (Create, Read, Update, Delete) web application built using [insert technology or framework here]. This project is a demo and is made for learning.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 CRUD-app is a web application that allows users to perform basic CRUD operations. This application is designed to be a simple, easy-to-understand example for developers looking to build similar CRUD applications using HTML CSS JS and nodejs (express).
