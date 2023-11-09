@@ -21,7 +21,7 @@ This project is a demo and is made for learning, serving as a practical example 
 
 ## Features
 
-- Create, read, update, and delete [your data type].
+- Create, read, update, and delete products.
 
 ## Getting Started
 
