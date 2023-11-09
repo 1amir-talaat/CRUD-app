@@ -15,23 +15,17 @@ This is a simple CRUD (Create, Read, Update, Delete) web application built using
 
 ## Introduction
 
-CRUD-app is a web application that allows users to perform basic CRUD operations on [describe what type of data the app manages]. This application is designed to be a simple, easy-to-understand example for developers looking to build similar CRUD applications using [insert technology or framework here].
+CRUD-app is a web application that allows users to perform basic CRUD operations. This application is designed to be a simple, easy-to-understand example for developers looking to build similar CRUD applications using HTML CSS JS and nodejs (express).
 
-This project is a demo and is made for learning, serving as a practical example for those looking to understand CRUD operations and [insert technology or framework here].
+This project is a demo and is made for learning, serving as a practical example for those looking to understand CRUD operations and HTML CSS JS and nodejs (express)
 
 ## Features
 
 - Create, read, update, and delete [your data type].
-- [Add more features here, if applicable]
 
 ## Getting Started
 
 Follow the instructions below to get the project up and running on your local machine.
-
-### Prerequisites
-
-- [List any prerequisites or dependencies that need to be installed]
-- [e.g., Node.js, MongoDB]
 
 ### Installation
 
@@ -40,3 +34,8 @@ Follow the instructions below to get the project up and running on your local ma
    ```bash
    git clone https://github.com/1amir-talaat/CRUD-app.git
    cd CRUD-app
+2. Install the required dependencies:
+
+   ```bash
+   cd server
+   npm i
